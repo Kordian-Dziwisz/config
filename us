@@ -1,6 +1,5 @@
 default  partial alphanumeric_keys modifier_keys
 xkb_symbols "basic" {
-
     name[Group1]= "English (US)";
 
     key <TLDE> {	[     grave,	asciitilde	]	};
@@ -212,13 +211,13 @@ xkb_symbols "dvorak" {
     key <AE03> { [	    3,	numbersign	]	};
     key <AE04> { [	    4,	dollar		]	};
     key <AE05> { [	    5,	percent		]	};
-    key <AE06> { [	    6,	asciicircum, dead_circumflex, dead_circumflex ]	};
+    key <AE06> { [	    6,	asciicircum]	};
     key <AE07> { [	    7,	ampersand	]	};
     key <AE08> { [	    8,	asterisk	]	};
-    key <AE09> { [	    9,	parenleft,  dead_grave]	};
+    key <AE09> { [	    9,	parenleft]	};
     key <AE10> { [	    0,	parenright	]	};
     key <AE11> { [ bracketleft,	braceleft	]	};
-    key <AE12> { [ bracketright, braceright,  dead_tilde] };
+    key <AE12> { [ bracketright, braceright ] };
 
     key <AD01> { [  apostrophe,	quotedbl, grave	] };
     key <AD02> { [       comma,	    less,   question	] };
@@ -230,33 +229,33 @@ xkb_symbols "dvorak" {
     key <AD08> { [	    c,	C, parenleft,	parenright		]	};
     key <AD09> { [	    r,	R, braceleft, braceright		]	};
     key <AD10> { [	    l,	L, bracketleft, bracketright		]	};
-    key <AD11> { [	 plus,	asterisk, asciicircum]	};
-    key <AD12> { [	equal,	asciitilde		]	};
+    key <AD11> { [	 plus,	asterisk, asciicircum, underscore]	};
+    key <AD12> { [	equal,	asciitilde, bar		]	};
 
-    key <AC01> { [	    a,	A, 1 		]	};
-    key <AC02> { [	    o,	O, 2		]	};
-    key <AC03> { [	    e,	E, 3		]	};
-    key <AC04> { [	    u,	U, 4		]	};
-    key <AC05> { [	    i,	I, 5		]	};
-    key <AC06> { [	    d,	D, 6		]	};
-    key <AC07> { [	    h,	H, 7		]	};
-    key <AC08> { [	    t,	T, 8		]	};
-    key <AC09> { [	    n,	N, 9		]	};
-    key <AC10> { [	    s,	S, 0		]	};
-    key <AC11> { [	minus,	slash, percent	]	};
+    key <AC01> {[	    a,	A,	1 ]};
+    key <AC02> {[	    o,	O,	2 ]};
+    key <AC03> {[	    e,	E,	3 ]};
+    key <AC04> {[	    u,	U,	4 ]};
+    key <AC05> {[	    i,	I,	5	]};
+    key <AC06> {[	    d,	D,	6	]};
+    key <AC07> {[	    h,	H,	7	]};
+    key <AC08> {[	    t,	T,	8	]};
+    key <AC09> {[	    n,	N,	9	]};
+    key <AC10> {[	    s,	S,	0	]};
+    key <AC11> {[	minus,	slash, percent, backslash	]	};
 
-    key <AB01> { [   semicolon,	colon, underscore, dead_doubleacute ] };
-    key <AB02> { [	    q,	Q		]	};
-    key <AB03> { [	    j,	J		]	};
-    key <AB04> { [	    k,	K		]	};
-    key <AB05> { [	    x,	X		]	};
-    key <AB06> { [	    b,	B		]	};
-    key <AB07> { [	    m,	M		]	};
-    key <AB08> { [	    w,	W		]	};
-    key <AB09> { [	    v,	V, U017A		]	};
-    key <AB10> { [	    z,	Z, U017C		]	};
-    key <BKSL> { [ backslash, bar, backslash, bar             ]       };
-    key <CAPS> { [	BackSpace, BackSpace ] };
+    key <AB01> { [   semicolon,	colon ] };
+    key <AB02> { [	    q,	Q		]};
+    key <AB03> { [	    j,	J		]};
+    key <AB04> { [	    k,	K		]};
+    key <AB05> { [	    x,	X		]};
+    key <AB06> { [	    b,	B		]};
+    key <AB07> { [	    m,	M		]};
+    key <AB08> { [	    w,	W		]};
+    key <AB09> { [	    v,	V		]};
+    key <AB10> { [	    z,	Z		]};
+    key <BKSL> { [ backslash, bar             ]       };
+    key <CAPS> { [	BackSpace, BackSpace, KP_Delete, KP_Deleteb ] };
     key <BKSP> { [ Caps_Lock, Caps_Lock] };
 
     include "level3(ralt_switch)"
@@ -490,8 +489,8 @@ xkb_symbols "dvorak-r" {
 };
 
 // Classic dvorak layout
-// by Piter Punk <piterpk@terra.com.br> - 2006-07-06 
-// Based on dvorak layout and e-mail from Russel L. Harris rlharris@oplink.net 
+// by Piter Punk <piterpk@terra.com.br> - 2006-07-06
+// Based on dvorak layout and e-mail from Russel L. Harris rlharris@oplink.net
 // on xorg list.
 partial alphanumeric_keys
 xkb_symbols "dvorak-classic" {
@@ -880,7 +879,7 @@ xkb_symbols "classmate-intl" {
 
     key <LSGT> { [ backslash,	bar,		backslash,	bar ] };
 
-    key <KP7>  { [	KP_Home,		KP_7,	
+    key <KP7>  { [	KP_Home,		KP_7,
 			onehalf,		dead_horn	] };
     key <KP8>  { [	KP_Up,			KP_8,
 			threequarters,		dead_ogonek	] };
@@ -959,7 +958,7 @@ xkb_symbols "classmate-altgr-intl" {
 
     key <LSGT> { [ backslash,	bar,		backslash,	bar ] };
 
-    key <KP7>  { [	KP_Home,		KP_7,	
+    key <KP7>  { [	KP_Home,		KP_7,
 			dead_horn,		dead_horn	] };
     key <KP8>  { [	KP_Up,			KP_8,
 			dead_ogonek,		dead_ogonek	] };
