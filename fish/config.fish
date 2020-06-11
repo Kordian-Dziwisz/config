@@ -28,7 +28,4 @@ set -g theme_project_dir_length 1
 
 set -g config ~/.config/fish/config.fish
 
-function backup -a outdir
-	cd ~
-	cp -rv books code downloads pictures scripts torrents vms -t $outdir
-end
+set -g dick "no, I'm not"
