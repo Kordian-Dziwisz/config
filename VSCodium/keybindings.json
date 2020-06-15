@@ -647,5 +647,43 @@
 	{
 		"key": "alt+;",
 		"command": "extension.toggleSemicolon"
+	},
+	{
+		"key": "ctrl+q",
+		"command": "workbench.action.closeWindow",
+		"when": "!editorIsOpen && !multipleEditorGroups"
+	},
+	{
+		"key": "ctrl+w",
+		"command": "-workbench.action.closeWindow",
+		"when": "!editorIsOpen && !multipleEditorGroups"
+	},
+	{
+		"key": "ctrl+q",
+		"command": "workbench.action.closeActiveEditor"
+	},
+	{
+		"key": "ctrl+w",
+		"command": "-workbench.action.closeActiveEditor"
+	},
+	{
+		"key": "ctrl+k w",
+		"command": "-workbench.action.closeEditorsInGroup"
+	},
+	{
+		"key": "ctrl+shift+q",
+		"command": "workbench.action.closeUnmodifiedEditors"
+	},
+	{
+		"key": "ctrl+k u",
+		"command": "-workbench.action.closeUnmodifiedEditors"
+	},
+	{
+		"key": "ctrl+s",
+		"command": "workbench.action.files.saveAll"
+	},
+	{
+		"key": "ctrl+s",
+		"command": "-workbench.action.files.save"
 	}
 ]

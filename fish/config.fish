@@ -27,5 +27,3 @@ set -g fish_prompt_pwd_dir_length 0
 set -g theme_project_dir_length 1
 
 set -g config ~/.config/fish/config.fish
-
-set -g dick "no, I'm not"
