@@ -25,5 +25,3 @@ set -g default_user your_normal_user
 set -g theme_color_scheme dracula
 set -g fish_prompt_pwd_dir_length 0
 set -g theme_project_dir_length 1
-
-set -g config ~/.config/fish/config.fish

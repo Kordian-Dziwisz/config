@@ -43,8 +43,7 @@
   "editor.insertSpaces": false,
   "editor.find.addExtraSpaceOnTop": false,
   "editor.minimap.maxColumn": 100,
-  "editor.minimap.scale": 2,
-  "files.enableTrash": false,
+	"editor.minimap.scale": 2,
   "files.eol": "\n",
   "files.trimFinalNewlines": true,
   "editor.minimap.renderCharacters": false,
@@ -97,5 +96,10 @@
     "**/dist/**": true,
     "**/node_modules": false,
     "**/node_modules/**": true
-  }
+	},
+	"terminal.external.linuxExec": "fish",
+	"terminal.integrated.cursorStyle": "line",
+	"terminal.integrated.drawBoldTextInBrightColors": false,
+	"keyboard.dispatch": "keyCode",
+	"window.restoreWindows": "one"
 }

@@ -71,10 +71,6 @@
 		"when": "textInputFocus && !editorReadonly"
 	},
 	{
-		"key": "shift+capslock",
-		"command": "editor.action.deleteLines"
-	},
-	{
 		"key": "ctrl+capslock",
 		"command": "workbench.action.terminal.deleteWordLeft",
 		"when": "terminalFocus"
@@ -211,7 +207,7 @@
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
 	{
-		"key": "delete",
+		"key": "ctrl+capslock",
 		"command": "-deleteFile",
 		"when": "explorerViewletVisible && filesExplorerFocus && !config.files.enableTrash && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
@@ -290,7 +286,8 @@
 	},
 	{
 		"key": "ctrl+r",
-		"command": "workbench.action.replaceInFiles"
+		"command": "workbench.action.replaceInFiles",
+		"when": "!filesExplorerFocus"
 	},
 	{
 		"key": "ctrl+shift+h",
@@ -638,7 +635,8 @@
 	},
 	{
 		"key": "alt+f",
-		"command": "actions.find"
+		"command": "actions.find",
+		"when": "editorTextFocus"
 	},
 	{
 		"key": "ctrl+f",
@@ -649,7 +647,7 @@
 		"command": "extension.toggleSemicolon"
 	},
 	{
-		"key": "ctrl+q",
+		"key": "ctrl+w",
 		"command": "workbench.action.closeWindow",
 		"when": "!editorIsOpen && !multipleEditorGroups"
 	},
@@ -659,7 +657,7 @@
 		"when": "!editorIsOpen && !multipleEditorGroups"
 	},
 	{
-		"key": "ctrl+q",
+		"key": "ctrl+w",
 		"command": "workbench.action.closeActiveEditor"
 	},
 	{
@@ -671,7 +669,7 @@
 		"command": "-workbench.action.closeEditorsInGroup"
 	},
 	{
-		"key": "ctrl+shift+q",
+		"key": "ctrl+shift+w",
 		"command": "workbench.action.closeUnmodifiedEditors"
 	},
 	{
@@ -685,5 +683,34 @@
 	{
 		"key": "ctrl+s",
 		"command": "-workbench.action.files.save"
+	},
+	{
+		"key": "ctrl+capslock",
+		"command": "deleteFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "shift+delete",
+		"command": "-deleteFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "delete",
+		"command": "-deleteFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceMoveableToTrash && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "ctrl+capslock",
+		"command": "moveFileToTrash",
+		"when": "explorerResourceMoveableToTrash && explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "delete",
+		"command": "-moveFileToTrash",
+		"when": "explorerResourceMoveableToTrash && explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "ctrl+q",
+		"command": "workbench.action.quit"
 	}
 ]
