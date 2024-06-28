@@ -1,0 +1,23 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "git.enableSmartCommit": true,
+    "C_Cpp.default.compilerPath": "/usr/bin/clang++",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "xml.symbols.maxItemsComputed": 50000000,
+    "xml.server.vmargs": "-Xmx256M",
+    "editor.maxTokenizationLineLength": 50000000,
+    "xml.format.maxLineWidth": 0,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+}
